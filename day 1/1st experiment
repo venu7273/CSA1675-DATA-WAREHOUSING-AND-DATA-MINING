@@ -1,0 +1,38 @@
+code:
+data<-read.csv("hotels.csv")
+View(data)
+output:
+ mean(data$days)
+[1] 2.499679
+> median(data$days)
+[1] 2
+> mode(data$days)
+[1] "numeric"
+> summary(data$days)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+    1.0     1.0     2.0     2.5     4.0     4.0 
+> IQR=(data$days)
+> quantile(data$days,0.25)
+25% 
+  1 
+> quantile(data$days,0.75)
+75% 
+  4 
+> range(data$days)
+[1] 1 4
+> mean(range(data$days))
+[1] 2.5
+> mean(data$total)
+[1] 536.2295
+> lf<-quantile(data$days,0.25)-1.5*(IQR(data$days))
+> print(lf)
+ 25% 
+-3.5 
+> lf<-quantile(data$days,0.25)+1.5*(IQR(data$days))
+> print(lf)
+25% 
+5.5 
+ outlier_values<-boxplot.stats(data$days)$out
+> print(outlier_values)
+integer(0)
+> 
