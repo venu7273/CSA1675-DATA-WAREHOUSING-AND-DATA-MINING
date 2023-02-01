@@ -3,3 +3,4 @@ data<-read.csv("hotels.csv")
 hist(data$days)
 output:
 http://127.0.0.1:36939/graphics/944fbc10-96f2-42e6-8a88-002099d7bde9.png
+
