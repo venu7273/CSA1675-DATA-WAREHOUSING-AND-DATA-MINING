@@ -1,0 +1,12 @@
+a<-c(200,200,400,600)
+minimum=0
+maximum=1
+minmax<-a-minimum/maximum-minimum
+c<-min(a)
+d<-max(a)
+mean<-mean(a)
+std<-sd(a)
+zscore<-a-mean/std
+print(zscore)
+print(minmax)
+print(a/100)
