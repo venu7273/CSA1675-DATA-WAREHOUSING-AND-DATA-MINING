@@ -1,0 +1,6 @@
+data<-data.frame(classes=c("datawarehouse","compilerdesign","graphics","theory of computation"),no_of_students=c("4","40","40","40"))
+write.csv(data, file = "sample_dataset.csv", row.names = FALSE)
+a<-read.csv( "sample_dataset.csv")
+View(a)
+c<-mean(a$no_of_students)
+print(c)

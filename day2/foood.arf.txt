@@ -1,0 +1,14 @@
+%%creating data set for apriori algorithim
+@relation_food
+@attribute hotdogs{TRUE,FALSE}
+@attrubute ketchup{TRUE,FALSE}
+@attribute buns{TRUE,FALSE}
+@attribute coke{TRUE,FALSE}
+@attribute chips{TRUE,FALSE}
+@data
+TRUE,TRUE,TRUE,FALSE,FALSE
+TRUE,FALSE,TRUE,FALSE,FALSE
+TRUE,FALSE,FALSE,TRUE,TRUE
+FALSE,FALSE,FALSE,TRUE,TRUE
+TRUE,FALSE,FALSE,TRUE,FALSE
+
