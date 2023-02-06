@@ -1,0 +1,5 @@
+library(arules)
+transactions <- as(split(c("B", "C", "D", "B", "C", "A"), c(1,1,1,2,2,2)), "transactions")
+rules <- apriori(transactions, parameter = list(support = 0.5, confidence = 0.5))
+rules <- sort(rules, by = "lift")
+inspect(rules[1:5])
